@@ -24,12 +24,11 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
-
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew || true
+        with:
+          gradle-version: '8.2'
 
       - name: Build with Gradle
-        run: ./gradlew assembleDebug test --stacktrace
+        run: gradle assembleDebug --stacktrace
 
       - name: Upload Debug APK Artifact
         uses: actions/upload-artifact@v4
@@ -37,3 +36,14 @@ jobs:
           name: pixel-assistant-debug.apk
           path: app/build/outputs/apk/debug/app-debug.apk
           retention-days: 14
+
+      - name: Create GitHub Release with APK
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feat/pixel-assistant-app'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.0-apk
+          name: Pixel Assistant v1.0.0 (Debug APK)
+          body: "Direct download link for Pixel 7 (Android 13/14/15)"
+          files: app/build/outputs/apk/debug/app-debug.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

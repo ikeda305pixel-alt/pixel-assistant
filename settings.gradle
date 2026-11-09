@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "PixelAssistant"
-include(":app")
+include ':app'
