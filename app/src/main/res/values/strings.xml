@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Pixel Assistant</string>
+    <string name="accessibility_service_description">LINE・Bumbleの未返信メッセージを検知して返信案を提示し、Netflix再生時に字幕翻訳や広告ミュートをアシストします。</string>
+    
+    <string name="title_gemini_settings">Gemini API 設定 (無料枠)</string>
+    <string name="desc_gemini_key">Google AI Studioで取得したAPIキーを入力してください。未入力でもスマートモック機能で動作します。</string>
+    <string name="hint_gemini_key">AIzaSy...</string>
+    
+    <string name="title_chat_settings">LINE / Bumble 設定</string>
+    <string name="title_auto_send">選択時に自動送信する (非推奨・上級者向け)</string>
+    <string name="desc_auto_send">OFF時は入力欄に下書きを挿入するだけなので、内容を確認して自分で送信できます（アカウント安全推奨）。</string>
+    
+    <string name="title_netflix_settings">Netflix 設定 (実験的)</string>
+    <string name="title_netflix_subs">字幕翻訳帯を表示 (画面の英語字幕を日本語化)</string>
+    <string name="desc_netflix_subs">動画の字幕と重ならないように字幕のすぐ上または画面上部に翻訳を表示します（ドラッグで移動可能）。</string>
+    <string name="title_netflix_ad_mute">広告再生時の自動ミュート</string>
+    <string name="desc_netflix_ad_mute">広告表示中のみ自動でメディア音量をゼロにし、本編に戻ると自動復帰します。</string>
+    
+    <string name="btn_open_accessibility">ユーザー補助設定を開く</string>
+    <string name="btn_open_overlay_permission">他のアプリの上に重ねて表示を許可</string>
+    <string name="btn_save_settings">設定を保存</string>
+    <string name="status_free_tier">無料枠ステータス: 安全稼働中 (本日の利用: %1$d / 1500 回)</string>
+</resources>

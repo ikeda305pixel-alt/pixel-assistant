@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#06C755</color>
+    <color name="primary_dark">#05A847</color>
+    <color name="bumble_yellow">#FFC629</color>
+    <color name="netflix_red">#E50914</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="background">#F8FAFC</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="border">#E2E8F0</color>
+    <color name="overlay_bg">#D90A0C10</color>
+    <color name="subs_gold">#FFD966</color>
+</resources>

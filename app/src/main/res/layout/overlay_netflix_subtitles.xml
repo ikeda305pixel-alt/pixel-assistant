@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/netflixSubsRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_netflix_subs"
+    android:elevation="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp">
+
+    <!-- Drag Handle & Controls -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/subsDragHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⋮⋮ 翻訳字幕 (ドラッグで移動可能)"
+            android:textColor="#9E9E9E"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btnCloseSubs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:padding="2dp"
+            android:text="✕"
+            android:textColor="#9E9E9E"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Japanese Translated Subtitle Text (High-contrast gold color, clearly legible) -->
+    <TextView
+        android:id="@+id/textTranslatedSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:maxWidth="340dp"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="字幕翻訳待機中..."
+        android:textColor="@color/subs_gold"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <!-- Original English Text (Small reference line) -->
+    <TextView
+        android:id="@+id/textOriginalSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:maxWidth="340dp"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+</LinearLayout>
